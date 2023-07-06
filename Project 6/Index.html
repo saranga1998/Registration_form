@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmls:th="http://www.thymeleaf.org"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer details form</title>
+    <link rel="stylesheet" href="./CSS/form_css.css">
+</head>
+<body style="background: url(./Img/blue-red-background.jpg) no-repeat;">
+    <script src="./Js/index.js"></script>
+    <!-- Registration form -->
+
+    <div class="container">
+
+        <div class="form-box">
+
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Registration</h2>
+
+                <p id="result"></p>
+
+                <div class="input-box">
+                    <input type="text" name="Username" placeholder="Username">
+                </div>
+
+                <div class="input-box">
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="cPassword" placeholder="Confirm Password">
+                </div>
+
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Register">
+                </div>
+
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="#">Login</a></span>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="popup" id="popup">
+            <h2>Thank you !</h2>
+            <p>Your were Registration Sucessfully.Thanks!</p>
+            <a href="#"><button class="pop-btn">
+                OK
+            </button></a>
+        </div>
+    </div>
+</body>
+</html>
